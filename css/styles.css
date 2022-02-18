@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Lobster&family=Luxurious+Roman&display=swap");
+
+body {
+  background-color: rgb(225, 225, 225);
+  color: rgb(10, 2, 27);
+
+  font-size: 16;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.avatar {
+  width: 250px;
+  border-radius: 25%;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 25);
+}
+
+.info {
+  display: flex;
+  margin-bottom: 30px;
+}
+.info-text {
+  margin-left: 30px;
+}
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+}
+
+
+a {
+  color: darkblue;
+  text-decoration: none;
+  font-weight: 700;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: aqua;
+}
+
+a:visited {
+  color: gray;
+}
+
+.hobby {
+  font-family: "Lobster", cursive;
+}
+.hobby li {
+  margin-bottom: 5px;
+}
+
+.info p {
+  color: rgb(71, 71, 71);
+  margin: auto;
+  font-style: oblique;
+}
+
+.bg-blue {
+  background: rgb(164, 153, 201);
+}
+.bg-red {
+  background: rgb(216, 201, 201);
+}
+.bg-green {
+  background: rgb(188, 207, 184);
+}
+.bg-purple {
+  background: rgb(207, 184, 202);
+}
+.bg-yellow {
+  background: rgb(201, 209, 125);
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.table {
+  width: 100%;
+}
+.table td:nth-last-child(2),
+.table td:nth-last-child(1) {
+  color: rgb(71, 71, 71);
+}
+
+.link-list {
+  padding: 0;
+  list-style: none;
+}
+.link-list li {
+  margin-bottom: 5px;
+}
+
+.form label {
+  display: block;
+  font-size: 20px;
+}
+
+.contact {
+  text-align: center;
+}
+.conteiner input {
+  
+}
+
+
+
+.conteiner {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 40px;
+}
+.conteiner h2 {
+  text-align: center;
+}
+
+#table1 {
+  width: 100%;
+  border: thin solid black;
+  caption-side: bottom;
+  border-collapse: collapse;
+ }
+#table1 td {
+  padding: 5px;
+  border: thin dotted gray;
+}
+
+

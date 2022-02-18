@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>The Starbuzz Bean Machine</title>
+	<link rel="stylesheet" href="starbuzz.css">
+	<link rel="stylesheet" href="accessform.css">
+</head>
+
+<body>
+	<header class='top'>
+		<h1>The Starbuzz Bean Machine</h1>
+		<h2>Заполните форму ниже и нажмите «Заказать сейчас», чтобы заказать</h2>
+	</header>
+	<form action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+		<fieldset>
+			<legend>Информация для заказа</legend>
+			<div class="tableRow">
+				<label for="beans">
+					Выберете свой кофе:
+				</label>
+				<select id="beans" name="beans">
+					<option value="House Blend">Домашняя смесь</option>
+					<option value="Bolivia">Shade Grown Боливия супремо</option>
+					<option value="Guatemala">Органическая гватемала</option>
+					<option value="Kenya">Кения</option>
+				</select>
+			</div>
+			<div class="tableRow">
+				<label>Type:</label>
+				<p>
+					<input type="radio" id="whole_beantype" name="beantype" value="whole">
+					<label for="whole_beantype">Whole bean</label><br>
+					<input type="radio" id="ground_beantype" name="beantype" value="ground" checked>
+					<label for="ground_beantype">Ground</label>
+				</p>
+			</div>
+			<div class="tableRow">
+				<label for="bags">Количество сумок:</label>
+				<input type="number" id="bags" name="bags" min="1" max="10">
+			</div>
+			<div class="tableRow">
+				<label for="date">Должен прибыть к дате:</label>
+				<input type="date" name="date">
+			</div>
+			<div class="tableRow">
+				<label>Дополнительно:</label>
+				<p>
+					<input type="checkbox" id="giftwrap_extras" name="extras[]" value="giftwrap">
+					<label for="giftwrap_extras">Подарочная упаковка</label><br>
+					<input type="checkbox" id="catalog_extras" name="extras[]" value="catalog" checked>
+					<label for="catalog_extras">Включить каталог с заказом</label>
+				</p>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Доставка до</legend>
+			<div class="tableRow">
+				<label for="name">Имя:</label>
+				<input type="text" id="name" name="name" value="" placeholder="Buckaroo Banzai" required>
+			</div>
+			<div class="tableRow">
+				<label for="address">Адрес:</label>
+				<input type="text" id="address" name="address" value="" placeholder="Banzai Institute" required>
+			</div>
+			<div class="tableRow">
+				<label for="city">Город:</label>
+				<input type="text" id="city" name="city" value="" placeholder="Los Angeles" required>
+			</div>
+			<div class="tableRow">
+				<label for="state">Штат:</label>
+				<input type="text" id="state" name="state" value="" placeholder="CA" required>
+			</div>
+			<div class="tableRow">
+				<label for="zip">Почтовый индекс:</label>
+				<input type="text" id="zip" name="zip" value="" placeholder="90050" required>
+			</div>
+			<div class="tableRow">
+				<label for="phone">Телефон:</label>
+				<input type="tel" id="phone" name="phone" value="" placeholder="310-555-1212" required>
+			</div>
+			<div class="tableRow">
+				<label for="comments">Комментарии клиентов:</label>
+				<textarea id="comments" name="comments"></textarea>
+			</div>
+			<div class="tableRow">
+				<label></label>
+				<input type="submit" value="Заказать сейчас">
+			</div>
+		</fieldset>
+	</form>
+	<footer>
+		&copy; 2012, Starbuzz Coffee
+		<br />
+		Все товарные знаки и зарегистрированные товарные знаки,
+		представленные на этом сайте,
+		являются собственностью их соответствующих владельцев.
+	</footer>
+</body>
+
+</html>
