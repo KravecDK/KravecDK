@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Lobster&family=Luxurious+Roman&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: rgb(51, 51, 51);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slid {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: burlywood;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition:  all 500ms ease-in-out;
+}
+
+.slid h2 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 5px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slid.active {
+    flex: 5;
+}
+
+.slid.slid.active h2 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.3s;
+}
